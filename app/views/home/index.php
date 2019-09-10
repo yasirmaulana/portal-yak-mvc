@@ -6,13 +6,13 @@
 		<p style="color:red; font-style:italic">Email atau Password salah!!!</p>
 	<?php endif; ?>
 
-	<a href="<?= BASEURL; ?>/mahasiswa">Daftar user</a>
+
     <div><h1 style="color:white">Portal YAK</h1></div>
 		<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
 		<input id="tab-2" type="radio" name="tab" class="for-pwd"><label for="tab-2" class="tab">Register</label>
 		<div class="login-form">
 			<div class="sign-in-htm">
-			    <form action="" method="post">
+			    <form action="<?= BASEURL ?>/home/login" method="post">
     				<div class="group">
     					<label for="email" class="label">Email</label>
     					<input style="background:white;color:black" id="email" type="email" class="input" name="email">
